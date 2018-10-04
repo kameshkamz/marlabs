@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title> AngularJs</title>    
+    <script src='https://code.angularjs.org/1.5.5/angular.min.js'> </script> 
+    <script src='app4.js'> </script>
+</head>
+<body>
+    <div ng-app='myapp'>
+       <div ng-controller='cntrl1'>
+            <p>{{user}}</p> 
+            <button id='btn'> Click</button>
+       </div>
+        <div ng-controller='cntrl2'>
+           <p> {{org}} </p>
+            <button ng-click='senddata()'> Send Data </button>
+
+        
+        </div>
+    
+    </div>
+
+</body>
+</html>

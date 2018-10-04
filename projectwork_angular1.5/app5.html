@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title> AngularJs</title>    
+    <script src='https://code.angularjs.org/1.5.5/angular.min.js'> </script> 
+    <script src='app5.js'> </script>
+</head>
+<body>
+    <div ng-app='myapp'>
+       <div ng-controller="cntrl1">
+           <!-- {{userdata}} -->
+           <p> From Directives </p>
+
+
+            <test-directive uname='{{username}}' pwd='password'> </test-directive>
+            <!-- <div test-directive=''></div> -->
+
+
+            <p> From Controller</p>
+            <div>
+                    <input type='text' placeholder='Username' ng-model='username' /> <br /><br />
+                    <input type='text' placeholder='Password' ng-model='password' /> <br /><br />
+                    <input type='button' value='Login' /> <br /> 
+            </div>
+       </div>
+       <!-- <div ng-controller="cntrl2">
+
+            {{userdata}}
+        </div> -->
+    
+    </div>
+</body>
+</html>

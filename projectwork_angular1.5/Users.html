@@ -1,0 +1,9 @@
+
+<h1> {{ pageTitle }}</h1>
+
+<div ng-repeat='user in Users track by $index'>
+    {{user.user}}
+    <a href='#/detail/$index'>View Details</a>
+</div>
+
+<button ng-click="gotohome()"> Go To Home </button>

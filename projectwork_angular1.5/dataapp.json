@@ -1,0 +1,22 @@
+[
+        
+        
+        {
+           "username":"user1",
+            "location":"location1",
+            "org":"amarlabs1"
+        },
+        {
+            "username":"user2",
+             "location":"location2",
+             "org":"bmarlabs2"
+         },
+         {
+            "username":"user3",
+             "location":"location3",
+             "org":"cmarlabs3"
+         }
+        
+        
+            
+]
