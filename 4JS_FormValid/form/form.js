@@ -74,7 +74,7 @@ if(locationData.value=='')
 
 if (flag == 1) {
 
-    var gen = male.checked.value == true ? "male" : "female";
+    var gen = male.checked == true ? "male" : "female";
     
 
     var b = {
@@ -109,12 +109,19 @@ function drawTable() {
     if (tab) {
       tab.remove();
     }
-    submit.insertAdjacentHTML("afterend", "<table id='tab' border=1><tr><th> UserName </th><th> Email </th><th> Company </th><th> Mobile </th><<th> Location </th><th> Gender </th></tr></table>");
+
+
+   // insertAdjacentHTML("beforeend", "<font color='red' size=3>  Validated Form  </font>");
+    submit.insertAdjacentHTML("afterend", "<table id='tab' border=1><tr><th>S.No</th><th> UserName </th><th> Email </th><th> Company </th><th> Mobile </th><<th> Location </th><th> Gender </th></tr></table>");
     var len = users.length;
     for (var i = 0; i < len; i++) {
       var obj = users[i];
       tab = document.getElementById('tab');
-      tab.insertAdjacentHTML("beforeend", "<tr><td>" + obj.name + "</td><td>" + obj.email + "</td><td>" + obj.company + "</td><td>" + obj.mobile + "</td> <td>" + obj.locationData + "</td> <td>" + obj.gende + "</td></tr>");
+      var j=0;
+
+      tab.insertAdjacentHTML("beforeend", "<tr><td>" + i + "</td><td>" + obj.name + "</td><td>" + obj.email + "</td><td>" + obj.company + "</td><td>" + obj.mobile + "</td> <td>" + obj.locationData + "</td> <td>" + obj.gende + "</td></tr>");
+
+
     }
   }
 }
